@@ -17,5 +17,6 @@ into the main directory and extract it.
 All commands are run from the main directory:
 1. Create a new directory `mkdir NICO_Vision_all`
 2. Run: `find ./NICO_Vision -name '*.jpg' -exec cp --backup=numbered '{}' ./NICO_Vision_all/ \;`
-1. Run: `python ./TF_FeatureExtraction/example_feat_extract.py`
+3. Add a line to the .bashrc file: `export PYTHONPATH=/pathToMainDirectory/models/research/slim/:$PYTHONPATH` and run `source ~/.bashrc`
+4. Run: `python ./TF_FeatureExtraction/example_feat_extract.py`
 
