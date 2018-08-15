@@ -10,13 +10,13 @@ ICOS -Interactive Cognitive System for Lifelong Learning.
 2. Put the content of this repository into the main directory.
 3. Download the [NICO Vision dataset](https://drive.google.com/open?id=1LOfoakc0AVxaG1Y983y5XqY7Ip1Wj1Jr)
 into the main directory and extract it.
-3. Create a virtual environment: `bash script_create_venv.sh`
-4. Activate the virtual environment: `source /home/<username>/.ICOS_VENV/bin/activate`
+4. Create a virtual environment: `bash script_create_venv.sh`
   
 # Extract features from NICO Vision 
 All commands are run from the main directory:
 1. Create a new directory `mkdir NICO_Vision_all`
 2. Run: `find ./NICO_Vision -name '*.jpg' -exec cp --backup=numbered '{}' ./NICO_Vision_all/ \;`
-3. Add a line to the .bashrc file: `export PYTHONPATH=/pathToMainDirectory/models/research/slim/:$PYTHONPATH` and run `source ~/.bashrc`
-4. Run: `python ./TF_FeatureExtraction/example_feat_extract.py`
+3. Activate the virtual environment: `source /home/<username>/.ICOS_VENV/bin/activate`
+4. Run: `export PYTHONPATH=/pathToMainDirectory/models/research/slim/:$PYTHONPATH`
+5. Run: `python ./TF_FeatureExtraction/example_feat_extract.py`
 
