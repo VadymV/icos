@@ -20,3 +20,7 @@ All commands are run from the main directory:
 4. Run: `export PYTHONPATH=/pathToMainDirectory/models/research/slim/:$PYTHONPATH`
 5. Run: `python ./TF_FeatureExtraction/example_feat_extract.py`
 
+# Implemented features:
+
+1. Extract features from the NICO dataset.
+
