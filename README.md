@@ -13,7 +13,8 @@ into the main directory and extract it.
 3. Create a virtual environment: `bash script_create_venv.sh`
 4. Activate the virtual environment: `source /home/<username>/.ICOS_VENV/bin/activate`
   
-# Extract features from NICO Vision (commands are run from the main directory):
+# Extract features from NICO Vision 
+## (commands are run from the main directory):
 1. Create a new directory 'mkdir NICO_Vision_all'
 2. Run: `find ./NICO_Vision -name '*.jpg' -exec cp --backup=numbered '{}' ./NICO_Vision_all/ \;`
 1. Run: `python ./TF_FeatureExtraction/example_feat_extract.py`
