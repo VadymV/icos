@@ -1,0 +1,6 @@
+model_checkpoint_path: "/home/vadym/models/resnet_v1_50/training_directory/model.ckpt-56127"
+all_model_checkpoint_paths: "/home/vadym/models/resnet_v1_50/training_directory/model.ckpt-50367"
+all_model_checkpoint_paths: "/home/vadym/models/resnet_v1_50/training_directory/model.ckpt-52220"
+all_model_checkpoint_paths: "/home/vadym/models/resnet_v1_50/training_directory/model.ckpt-54163"
+all_model_checkpoint_paths: "/home/vadym/models/resnet_v1_50/training_directory/model.ckpt-56111"
+all_model_checkpoint_paths: "/home/vadym/models/resnet_v1_50/training_directory/model.ckpt-56127"
