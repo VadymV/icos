@@ -10,7 +10,7 @@ ICOS -Interactive Cognitive System for Lifelong Learning.
 2. Put the content of this repository into the main directory.
 3. Download the [NICO Vision dataset](https://drive.google.com/open?id=1LOfoakc0AVxaG1Y983y5XqY7Ip1Wj1Jr)
 into the main directory and extract it.
-4. Create a virtual environment: `bash script_create_venv.sh`
+4. Create a virtual environment: `bash script_create_venv.sh` Please be advised, that the file 'requirements.txt' may not be found. Follow the the terminal output and place it in the correct folder.
   
 # Extract features from NICO Vision 
 All commands are run from the main directory:
