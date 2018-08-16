@@ -14,11 +14,16 @@ into the main directory and extract it.
   
 # Extract features from NICO Vision 
 All commands are run from the main directory:
-1. Create a new directory `mkdir NICO_Vision_all`
-2. Run: `find ./NICO_Vision -name '*.jpg' -exec cp --backup=numbered '{}' ./NICO_Vision_all/ \;`
-3. Activate the virtual environment: `source /home/<username>/.ICOS_VENV/bin/activate`
-4. Run: `export PYTHONPATH=/pathToMainDirectory/models/research/slim/:$PYTHONPATH`
-5. Run: `python ./TF_FeatureExtraction/example_feat_extract.py`
+1. Run: `find ./NICO_Vision -name '*.jpg' -exec cp --backup=numbered '{}' ./NICO_Vision_all/ \;`
+2. Activate the virtual environment: `source /home/<username>/.ICOS_VENV/bin/activate`
+3. Run: `export PYTHONPATH=/pathToMainDirectory/models/research/slim/:$PYTHONPATH`
+4. Run: `python ./TF_FeatureExtraction/example_feat_extract.py`
+
+# Train a CNN model using the NICO Vision dataset
+1. To train a CNN model it is important to set the number of output class labels and the number of images for train and test sets.
+Default values are: 50, 10200 and 10200 respectively. If there is a need to change these settings, it can be done in the file 'nico.py',  the package 'datasets'. 
+2. Split data into train and test sets. 
+3. Prepare the data by converting it to TFRecords (protos). Run: `python ./models/research/slim/convert_data.py`
 
 # Implemented features:
 
