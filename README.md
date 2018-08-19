@@ -21,7 +21,7 @@ will be referred as 'main' directory.
 3. Put the content of this repository into the main directory.
 4. Download the [NICO Vision dataset](https://drive.google.com/open?id=1LOfoakc0AVxaG1Y983y5XqY7Ip1Wj1Jr)
 into the main directory and extract it.
-5. Create a virtual environment: `bash script_create_venv.sh` 
+5. Create a virtual environment: `bash script_create_venv.sh`
 6. Activate the virtual environment: `source ~/.ICOS_VENV/bin/activate`
 7. Run: `export PYTHONPATH=/pathToMainDirectory/models/research/slim/:$PYTHONPATH`
 
@@ -62,10 +62,10 @@ Extract all files into one directory called 'CORe50' and put it into the main di
 [1] Vincenzo Lomonaco and Davide Maltoni. Core50: a new dataset and bench-
 mark for continuous object recognition. In 1st Annual Conference on Robot
 Learning, CoRL 2017, Mountain View, California, USA, November 13-15,
-2017, Proceedings, pages 17–26, 2017.
+2017, Proceedings, pages 17–26, 2017.  
 [2] German I. Parisi, Jun Tani, Cornelius Weber, and Stefan Wermter. Lifelong
 learning of human actions with deep neural network self-organization. Neural
-Networks, 96:137 – 149, 2017.
+Networks, 96:137 – 149, 2017.  
 [3] Giulia Pasquale, Carlo Ciliberto, Francesca Odone, Lorenzo Rosasco, and
 Lorenzo Natale. Are we done with object recognition? the icub robot’s per-
 spective. CoRR, abs/1709.09882, 2017. http://arxiv.org/abs/1709.09882.
