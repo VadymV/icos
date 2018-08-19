@@ -53,15 +53,15 @@ source ~/.$VIRTUALENVDIR/bin/activate
 
 #install python packages
 if [ $VIRTUAL_ENV == ~/.$VIRTUALENVDIR ]; then
-  echo Please place the requirements.txt here:
-  pwd
   echo "Checking python packages"
-  pip install -r requirements.txt
+  pip install -r $CALLDIR/requirements.txt
   pip install h5py
   pip install numba
   pip install matplotlib
+  pip install sklearn
 else
   echo "Activation failed - skipping python package installations"
 fi
+
 
 

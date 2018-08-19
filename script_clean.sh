@@ -14,14 +14,14 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 # ==============================================================================
-
-mkdir ./NICO_Vision_train_test
-mkdir ./NICO_Vision_train_test/train
-mkdir ./NICO_Vision_train_test/test
-
-# Split NICO Vision into train and test sets
-python ./split_data_nico.py \
---input_dataset=./NICO_Vision \
---output_train=./NICO_Vision_train_test/train/ \
---output_test=./NICO_Vision_train_test/test/ \
---session_test=2 \
+rm -r ./training_directory
+rm -r ./ICWT_all
+rm -r ./ICWT_train_test
+rm -r ./NICO_TFRecords
+rm -r ./NICO_Vision_all
+rm -r ./NICO_Vision_train_test
+rm -r ./saved_data
+rm -r ./training_directory
+rm -r ./checkpoint
+rm -r ./NICO_Vision
+rm -r ./ICWT

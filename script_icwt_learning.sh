@@ -15,13 +15,13 @@
 # limitations under the License.
 # ==============================================================================
 
-mkdir ./NICO_Vision_train_test
-mkdir ./NICO_Vision_train_test/train
-mkdir ./NICO_Vision_train_test/test
+mkdir ./saved_data
 
-# Split NICO Vision into train and test sets
-python ./split_data_nico.py \
---input_dataset=./NICO_Vision \
---output_train=./NICO_Vision_train_test/train/ \
---output_test=./NICO_Vision_train_test/test/ \
---session_test=2 \
+# Object learning with NICO.
+python ./GWR-Extensions/object_learning_icwt.py \
+--dataset ./reduced_features.csv \
+--dataset_name icwt \
+--threshold 0.32 \
+--num_weights 10 \
+--epochs 3 \
+--num_classes 50 \
