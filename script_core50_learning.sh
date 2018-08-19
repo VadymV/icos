@@ -19,10 +19,10 @@
 mkdir ./saved_data
 
 # Object learning with NICO.
-python ./GWR-Extensions/object_learning_icwt.py \
+python ./GWR-Extensions/object_learning_core50.py \
 --dataset ./reduced_features.csv \
 --dataset_name icwt \
---threshold 0.32 \
---num_weights 10 \
+--threshold 0.3 \
+--num_weights 5 \
 --epochs 3 \
 --num_classes 50 \

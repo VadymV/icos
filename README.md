@@ -21,8 +21,9 @@ will be referred as 'main' directory.
 3. Put the content of this repository into the main directory.
 4. Download the [NICO Vision dataset](https://drive.google.com/open?id=1LOfoakc0AVxaG1Y983y5XqY7Ip1Wj1Jr)
 into the main directory and extract it.
-5. Activate the virtual environment: `source ~/.ICOS_VENV/bin/activate`
-6. Run: `export PYTHONPATH=/pathToMainDirectory/models/research/slim/:$PYTHONPATH`
+5. Create a virtual environment: `bash script_create_venv.sh` 
+6. Activate the virtual environment: `source ~/.ICOS_VENV/bin/activate`
+7. Run: `export PYTHONPATH=/pathToMainDirectory/models/research/slim/:$PYTHONPATH`
 
 # NICO Vision
 ## Extract the features
