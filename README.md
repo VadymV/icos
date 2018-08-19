@@ -26,13 +26,13 @@ into the main directory and extract it.
 7. Run: `export PYTHONPATH=/pathToMainDirectory/models/research/slim/:$PYTHONPATH`
 
 # NICO Vision
-## Extract the features
+### Extract the features
 1. Run: `bash script_extract_features_nico_vision.sh`
 
-## Object learning with the RGWR network
+### Object learning with the RGWR network
 1. Run `bash script_nico_learning.sh`
 
-## Extra: train and evaluate a CNN model
+### Extra: train and evaluate a CNN model
 1. To train a CNN model it is important to set the number of output class labels and the number of images for train and test sets.
 Default values are 50, 10200 and 10200 respectively. If there is a need to change these settings, it can be done in the file 'nico.py',  the package 'datasets'.
 2. Split data into train and test sets: `bash script_split_nico_data.sh`.
@@ -40,23 +40,23 @@ Default values are 50, 10200 and 10200 respectively. If there is a need to chang
 `bash script_train_cnn_model_nico_vision.sh`
 
 # ICWT
-## Extract the features
+### Extract the features
 1. Download the [ICWT dataset](https://robotology.github.io/iCubWorld/#icubworld-transformations-modal)[3].
 Extract all files and put category folders into one directory called 'ICWT' and place it into the main directory.
 2. Run: `bash script_extract_features_icwt.sh`.
 Depending on the CPU, GPU and HDD/SDD performance, this operation may take up to several hours.
 
-## Object learning with the RGWR network
+### Object learning with the RGWR network
 1. Run `bash script_icwt_learning.sh`
 
 
 # CORe50
-## Extract the features
+### Extract the features
 1. Download the [CORe50 dataset](http://bias.csr.unibo.it/maltoni/download/core50/core50_128x128.zip)[1].
 Extract all files into one directory called 'CORe50' and put it into the main directory.
 2. Run: `bash script_extract_features_core50.sh`
 
-## Object learning with the RGWR network
+### Object learning with the RGWR network
 1. Run `bash script_core50_learning.sh`
 
 [1] Vincenzo Lomonaco and Davide Maltoni. Core50: a new dataset and bench-
