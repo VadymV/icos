@@ -15,13 +15,16 @@
 # limitations under the License.
 # ==============================================================================
 rm -r ./training_directory
+rm -r ./ICWT
 rm -r ./ICWT_all
 rm -r ./ICWT_train_test
 rm -r ./NICO_TFRecords
+rm -r ./NICO_Vision
 rm -r ./NICO_Vision_all
-rm -r ./NICO_Vision_train_test
 rm -r ./saved_data
 rm -r ./training_directory
 rm -r ./checkpoint
-rm -r ./NICO_Vision
-rm -r ./ICWT
+rm -r ./CORe50
+rm -r ./CORe50_all
+rm -r ./reduced_features.csv
+rm -r ./reduced_features.h5

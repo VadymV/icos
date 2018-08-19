@@ -22,7 +22,7 @@ mkdir ./saved_data
 python ./GWR-Extensions/object_learning_icwt.py \
 --dataset ./reduced_features.csv \
 --dataset_name icwt \
---threshold 0.32 \
+--threshold 0.38 \
 --num_weights 10 \
 --epochs 3 \
 --num_classes 50 \

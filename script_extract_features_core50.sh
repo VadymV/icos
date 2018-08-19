@@ -18,13 +18,13 @@
 # THE SOFTWARE.
 
 mkdir ./CORe50_all
-find ./CORe50 -name '*.jpg' -exec cp --backup=numbered '{}' ./CORe50_all/ \;
+find ./CORe50 -name '*.png' -exec cp --backup=numbered '{}' ./CORe50_all/ \;
 
 # Extract features
 python ./TF_FeatureExtraction/example_feat_extract.py \
 --network resnet_v1_50 \
 --checkpoint ./pretrainedModels/ResNet50/model.ckpt-56127 \
---image_path ./ICWT_all/ \
+--image_path ./CORe50_all/ \
 --out_features_h5 ./reduced_features.h5 \
 --out_features_csv ./reduced_features.csv \
 --layer_names Features_3d \
