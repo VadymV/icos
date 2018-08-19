@@ -17,11 +17,8 @@
 # TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 # THE SOFTWARE.
 
-python ./prepare_icwt.py \
---input_dataset ./ICWT \
-
-mkdir ./ICWT_all
-find ./ICWT -name '*.jpg' -exec cp --backup=numbered '{}' ./ICWT_all/ \;
+mkdir ./CORe50_all
+find ./CORe50 -name '*.jpg' -exec cp --backup=numbered '{}' ./CORe50_all/ \;
 
 # Extract features
 python ./TF_FeatureExtraction/example_feat_extract.py \
@@ -33,4 +30,4 @@ python ./TF_FeatureExtraction/example_feat_extract.py \
 --layer_names Features_3d \
 --batch_size 64 \
 --num_classes 50 \
---dataset_name ICWT \
+--dataset_name CORe50 \
