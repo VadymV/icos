@@ -17,6 +17,9 @@
 # TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 # THE SOFTWARE.
 
+if [ -d "./NICO_Vision_all" ]; then
+  rm -r ./NICO_Vision_all
+fi
 mkdir ./NICO_Vision_all
 find ./NICO_Vision -name '*.jpg' -exec cp --backup=numbered '{}' ./NICO_Vision_all/ \;
 
@@ -30,4 +33,4 @@ python ./TF_FeatureExtraction/example_feat_extract.py \
 --layer_names Features_3d \
 --batch_size 64 \
 --num_classes 50 \
---dataset_name NICO \
+--dataset_name NICO

@@ -43,7 +43,7 @@ else
   echo "No virtualenv found - setting up new virtualenv"
   # Test for virtualenv
   if ! [ -x "$(command -v virtualenv)" ]; then
-    pip install --user virtualenv
+    pip3 install --user virtualenv
     VIRTUALENV=".local/bin/virtualenv"
   fi
   $VIRTUALENV -p /usr/bin/python3 --system-site-packages ~/.$VIRTUALENVDIR
@@ -54,11 +54,14 @@ source ~/.$VIRTUALENVDIR/bin/activate
 #install python packages
 if [ $VIRTUAL_ENV == ~/.$VIRTUALENVDIR ]; then
   echo "Checking python packages"
-  pip install -r $CALLDIR/requirements.txt
-  pip install h5py
-  pip install numba
-  pip install matplotlib
-  pip install sklearn
+  pip3 install -r $CALLDIR/requirements.txt
+  pip3 install scipy
+  pip3 install pandas
+  pip3 install tensorflow-gpu==1.5
+  pip3 install h5py
+  pip3 install numba
+  pip3 install matplotlib
+  pip3 install sklearn
 else
   echo "Activation failed - skipping python package installations"
 fi

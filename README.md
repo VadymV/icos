@@ -5,9 +5,11 @@ to extract the features from the image sequences. The second one is the RGWR net
 uses the extracted features as the input data for continuous object learning.
 
 ### Requirements:
-1. GPU with installed drivers for CUDA >=9.0 and cuDNN >=7.
-2. Python 3.
-3. A Linux-based system (tested on an Ubuntu-based system).
+1. A Linux-based system (tested on a Xubuntu 16.04 system).
+2. GPU with installed drivers for CUDA=9.0 and cuDNN=7.0.5. Other (newer) versions are also possible, but were not tested.
+3. Python 3 as a default python interpreter (Add `alias python=python3` to the file `~/.bashrc`) with the installed python3-pip package.
+4. python3-tk (`sudo apt-get install python3-tk`).
+
 All commands are run from the main directory.
 
 # Setup instructions for Linux-based systems using a terminal:
@@ -23,7 +25,10 @@ will be referred as 'main' directory.
 into the main directory and extract it.
 5. Create a virtual environment: `bash script_create_venv.sh`
 6. Activate the virtual environment: `source ~/.ICOS_VENV/bin/activate`
-7. Run: `export PYTHONPATH=/pathToMainDirectory/models/research/slim/:$PYTHONPATH`
+7. Run: `export PYTHONPATH=/{pathToMainDirectory}/models/research/slim/:$PYTHONPATH`
+
+NOTE: A cpu version of tensorflow can also be used (not tested), but the running time may be extremely long.
+Just replace the command `pip3 install tensorflow-gpu==1.5` with `pip3 install tensorflow==1.5` in the file `bash script_create_venv.sh`.
 
 # NICO Vision
 ### Extract the features
