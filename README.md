@@ -28,7 +28,7 @@ into the main directory and extract it.
 7. Run: `export PYTHONPATH=/{pathToMainDirectory}/models/research/slim/:$PYTHONPATH`
 
 NOTE: A cpu version of tensorflow can also be used (not tested), but the running time may be extremely long.
-Just replace the command `pip3 install tensorflow-gpu==1.5` with `pip3 install tensorflow==1.5` in the file `bash script_create_venv.sh`.
+Just replace the command `pip3 install tensorflow-gpu==1.5` with `pip3 install tensorflow==1.5` in the file `script_create_venv.sh`.
 
 # NICO Vision
 ### Extract the features
