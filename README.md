@@ -17,9 +17,9 @@ All commands are run from the main directory.
 1. Create the directory, which will contain all required files. This directory
 will be referred as 'main' directory.
 2. Clone the following repositories from the main directory:
-  [Feature extraction](https://github.com/VadymV/TF_FeatureExtraction.git),
-  [Tensorflow models](https://github.com/VadymV/models.git),
-  [GWR extensions](https://github.com/VadymV/GWR-Extensions.git).
+  [Feature extraction](https://github.com/VadymV/TF_FeatureExtraction),
+  [Tensorflow models](https://github.com/VadymV/models),
+  [GWR extensions](https://github.com/VadymV/GWR-Extensions).
 3. Put the content of this repository into the main directory.
 4. Download the [NICO Vision dataset](https://drive.google.com/open?id=1LOfoakc0AVxaG1Y983y5XqY7Ip1Wj1Jr)
 into the main directory and extract it.
