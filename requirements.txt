@@ -21,7 +21,7 @@ kiwisolver==1.0.1
 language-selector==0.1
 lightdm-gtk-greeter-settings==1.2.1
 llvmlite==0.22.0
-lxml==3.5.0
+lxml==4.6.3
 Markdown==2.6.11
 matplotlib==2.2.2
 menulibre==2.1.3
